@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
 
 * {
     box-sizing: border-box;
@@ -8,6 +9,16 @@
 body {
     font-family: system-ui;
     line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    justify-items: space-between;
+    min-height: 100vh;
+}
+
+#content {
+    margin-top: 3em;
+    flex: 1;
+    position: relative;
 }
 
 img {
@@ -16,28 +27,44 @@ img {
 }
 
 header {
-    padding: 0.5em 0;
-    font-size: 1.25rem;
-    display: flex;
-    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-color: #777;
     color: white;
 }
 
-header>p {
+.header-content {
+    max-width: 95ch;
+    margin-inline: auto;
+    padding: 0.5em 0;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+#logo {
     margin: 0;
+    font-family: 'MedievalSharp', cursive;
+    font-size: 1.3rem;
+    font-weight: bold;
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 nav>a {
     padding: 0 2em;
-    text-decoration: none;
-    color: white;
 }
 
 .current-tab {
     background-color: white;
     color: black;
-    padding: 1em 2em;
+    padding: 0.75em 2em;
     border-radius: 30% 30% 0 0;
 }
 
@@ -54,6 +81,7 @@ main {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 1em;
+    align-items: center;
 }
 
 .hero-text {
@@ -69,11 +97,14 @@ h1 {
     margin: 0.5em 0;
 }
 
-.hero-text>button {
-    margin-top: 3em;
+button {
     width: 8rem;
     padding: 0.5rem 1rem;
     font-weight: bold;
+}
+
+.hero-text>button {
+    margin-top: 3em;
     place-self: center;
 }
 
@@ -83,4 +114,44 @@ h2 {
 
 p {
     margin-bottom: 0.5em;
+}
+
+.reviews {
+    display: grid;
+}
+
+.reviews>.cta {
+    margin-top: 1em;
+    place-self: center;
+}
+
+.dishes {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(42ch, 1fr));
+    gap: 1em;
+}
+
+.dish {
+    display: grid;
+    place-items: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    align-items: center;
+    background-color: #777;
+    color: white;
+    padding: 0.5em 0;
+}
+
+footer>p {
+    margin: 0;
+}
+
+svg {
+    max-width: 2rem;
+    fill: white;
 }
