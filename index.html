@@ -3,10 +3,125 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant Page</title>
+    <title>Fantastic Feasts</title>
     <script src="main.js" defer></script>
 </head>
 <body>
-    <div id="content"></div>
+    <div id="content">
+        <header>
+            <p id="logo">Fantastic Feasts</p>
+            <nav>
+                <a href="#" class="current-tab">Home</a>
+                <a href="#">Contact</a>
+                <a href="#">Menu</a>
+            </nav>
+        </header>
+        <main>
+            <div class="hero container">
+                <div class="hero-text">
+                    <h1>Feast on Culinary Magic from Fantasy Worlds</h1>
+                    <p>We bring the fantastical flavors of your favorite fictional worlds to life.</p>
+                    <p>From the pages of beloved books to the silver screen, immerse yourself in a dining experience like no other!</p>
+                    <button class="cta">Book Now!</button>
+                </div>
+                <div class="hero-image">
+                    <img src="../src/fantasy_meal.jpeg" alt="">
+                </div>
+            </div>
+            <div class="about container">
+                <h2>A Realm of Culinary Wonder</h2>
+                <p>At Fantastic Feasts, food is an enchanting journey into the heart of fantasy realms.</p>
+                <p>Our skilled chefs draw inspiration from legendary tales and mythic sagas to craft dishes that ignite your imagination and satisfy your cravings.</p>
+                <p>Embark on an epicurean adventure with us as we turn cherished literary and cinematic feasts into reality.</p>
+            </div>
+            <div class="reviews container">
+                <h2>What adventurers say</h2>
+                <p class="testimonial">"The Lembas Bread took me straight to Middle-earth! Simply mesmerizing!" - Frodo B.</p>
+                <p class="testimonial">"I felt like a wizard sipping the Pan Galactic Gargle Blaster. Unforgettable!" - Arthur D.</p>
+                <p class="testimonial">"Magical feasting! The Golden Snitch cocktails were a delightful surprise." - Luna L.</p>
+                <p>Join the ranks of our enchanted diners and share your own fantastical journey with us.</p>
+                <button class="cta">Book Now!</button>
+            </div>
+            <div class="contact container">
+                <h2>Reserve Your Table in the Realm</h2>
+                <p>Ready to embark on a culinary adventure? Secure your place at our enchanted table and let our extraordinary dishes whisk you away to lands of wonder.</p>
+                <p>Opening Hours</p>
+                <ul>
+                    <li>Monday to Friday: [Opening Hours]</li>
+                    <li>Saturday: [Opening Hours]</li>
+                    <li>Sunday: [Opening Hours]</li>
+                </ul>
+                <p>Please note that our hours may change based on celestial alignments or magical events.</p>
+                <p>To make a reservation, use the form below or send a raven to [Phone Number].</p>
+                <p>For any special requests or magical inquiries, our friendly staff is here to assist you.</p>
+                <form action="#">
+                    <label for="guests">Number of guests: </label>
+                    <input type="number" name="guests" id="guests" min="1" max="12" required>
+                    <label for="date">Date: </label>
+                    <input type="date" id="date" name="date" min="2023-07-29" max="2023-08-28" required>
+                    <label for="hour">Time: </label>
+                    <select name="hour" id="hour" required>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                    </select>:
+                    <select name="minute" id="minute" required>
+                        <option value="00">00</option>
+                        <option value="15">15</option>
+                        <option value="30">30</option>
+                        <option value="45">45</option>
+                    </select>
+                    <label for="email">Email: </label>
+                    <input type="email" name="email" id="email">
+                    <button>Book Now</button>
+                </form>
+            </div>
+            <div class="menu container">
+                <h2>Explore Our Mythical Menu</h2>
+                <p>Indulge in the flavors of your favorite fantasy worlds with our diverse and magical menu.</p>
+                <p>From Elven Lembas Bread to savory Hobbit fare, each dish is meticulously crafted to transport you to distant realms.</p>
+                <p>We've conjured up a delightful selection of beverages too, including Pan Galactic Gargle Blasters and the Golden Snitch-inspired cocktails.</p>
+                <p>Embark on a culinary quest and explore our fantastical offerings.</p>
+                <div class="dish">
+                    <img src="" alt="Lembas Bread">
+                    <p>Lembas Bread</p>
+                </div>
+                <div class="dish">
+                    <img src="" alt="Mushroom Scones">
+                    <p>Mushroom Scones</p>
+                </div>
+                <div class="dish">
+                    <img src="" alt="Roast Mutton ">
+                    <p>Roast Mutton </p>
+                </div>
+                <div class="dish">
+                    <img src="" alt="The Turkish Delight">
+                    <p>The Turkish Delight</p>
+                </div>
+                <div class="dish">
+                    <img src="" alt="Everlasting Gobstoppers">
+                    <p>Everlasting Gobstoppers</p>
+                </div>
+                <div class="dish">
+                    <img src="" alt="Romulan Ale">
+                    <p>Romulan Ale</p>
+                </div>
+                <div class="dish">
+                    <img src="" alt="Golden Snitch Cocktail">
+                    <p>Golden Snitch Cocktail</p>
+                </div>
+                <div class="dish">
+                    <img src="" alt="Pan Galactic Gargle Blaster">
+                    <p>Pan Galactic Gargle Blaster</p>
+                </div>
+            </div>
+        </main>
+    </div>
 </body>
 </html>
