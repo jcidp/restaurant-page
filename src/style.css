@@ -11,8 +11,7 @@ body {
     line-height: 1.5;
     display: flex;
     flex-direction: column;
-    justify-items: space-between;
-    min-height: 100vh;
+    min-height: 100svh;
 }
 
 #content {
@@ -101,7 +100,7 @@ h1 {
 .hero-text>p {
     margin: 0.5em 0;
 }
-
+/* 
 button {
     width: 8rem;
     padding: 0.5rem 1rem;
@@ -111,7 +110,7 @@ button {
 .hero-text>button {
     margin-top: 3em;
     place-self: center;
-}
+} */
 
 h2 {
     margin-bottom: 0.5em;
@@ -120,7 +119,7 @@ h2 {
 p {
     margin-bottom: 0.5em;
 }
-
+/* 
 .reviews {
     display: grid;
 }
@@ -128,7 +127,7 @@ p {
 .reviews>.cta {
     margin-top: 1em;
     place-self: center;
-}
+} */
 
 .dishes {
     margin-top: 2em;

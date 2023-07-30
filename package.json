@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "gitHubOrigin": "git subtree push --prefix dist origin gh-pages"
+    "gitHubOrigin": "git subtree push --prefix dist origin gh-pages",
+    "build": "webpack"
   },
   "keywords": [],
   "author": "",
