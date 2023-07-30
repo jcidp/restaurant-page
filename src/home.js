@@ -3,7 +3,7 @@ import { createElement } from "./header";
 
 export default function loadHome() {
     const content = document.getElementById("content");
-    const main = document.createElement("main");
+    const main = document.querySelector("main");
     
     const hero_text = createElement("div", "", "hero-text");
     hero_text.appendChild(createElement("h1", "Feast on Culinary Magic from Fantasy Worlds"));

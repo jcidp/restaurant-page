@@ -5,14 +5,21 @@ const loadHeader = () => {
     const header_content = createElement("div", null, "header-content");
     header_content.appendChild(createElement("p", "Fantastic Feasts", null, ["id", "logo"]));
     const nav = createElement("nav");
-    nav.appendChild(createElement("a", "Home", "current-tab", ["href", "#"]));
-    nav.appendChild(createElement("a", "Contact", "", ["href", "#"]));
-    nav.appendChild(createElement("a", "Menu", "", ["href", "#"]));
+    const home = createElement("a", "Home", "current-tab", ["id", "home"]);
+    home.setAttribute("href", "");
+    const contact = createElement("a", "Contact", "", ["id", "contact"]);
+    contact.setAttribute("href", "");
+    const menu = createElement("a", "Menu", "", ["id", "menu"]);
+    menu.setAttribute("href", "");
+    nav.appendChild(home);
+    nav.appendChild(contact);
+    nav.appendChild(menu);
     header_content.appendChild(nav);
     header.appendChild(header_content);
     
     const content = createElement("div", "", "", ["id", "content"]);
     content.appendChild(header);
+    content.appendChild(createElement("main"));
 
     const footer = document.createElement("footer");
     const anchor = createElement("a", "", "", ["href", "https://github.com/jcidp"]);
