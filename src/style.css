@@ -24,6 +24,7 @@ body {
 img {
     max-width: 100%;
     display: block;
+    border-radius: 10px;
 }
 
 header {
@@ -128,7 +129,7 @@ p {
 .dishes {
     margin-top: 2em;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(42ch, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(32ch, 1fr));
     gap: 1em;
 }
 
@@ -138,17 +139,21 @@ p {
 }
 
 footer {
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-    align-items: center;
     background-color: #777;
     color: white;
     padding: 0.5em 0;
 }
 
-footer>p {
+footer>a>p {
     margin: 0;
+}
+
+footer>a {
+    min-width: 10rem;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
 }
 
 svg {

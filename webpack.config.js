@@ -1,7 +1,13 @@
 const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-    entry: './src/index.js',
+    entry: {
+        index: './src/index.js',
+        home: "./src/home.js"
+    },
+    mode: "development",
+    devtool: "inline-source-map",
     module: {
         rules: [
             {
@@ -14,9 +20,15 @@ module.exports = {
             },
             
         ],
-    },    
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+            title: 'Fantasy Feasts',
+        }),
+    ],
     output: {
-        filename: 'main.js',
+        filename: '[name].bundle.js',
         path: path.resolve(__dirname, "dist"),
+        clean: true,
     },
 };
