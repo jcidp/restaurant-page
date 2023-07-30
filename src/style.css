@@ -16,7 +16,6 @@ body {
 }
 
 #content {
-    margin-top: 3em;
     flex: 1;
     position: relative;
 }
@@ -32,7 +31,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #777;
+    background-color: #2d4938;
     color: white;
 }
 
@@ -59,23 +58,24 @@ a {
 }
 
 nav>a {
-    padding: 0 2em;
+    padding: 0 2rem;
 }
 
 .current-tab {
     background-color: white;
     color: black;
-    padding: 0.75em 2em;
+    padding: 1rem 2rem;
     border-radius: 30% 30% 0 0;
 }
 
 main {
     width: min(95ch, 100% - 4rem);
     margin-inline: auto;
+    margin-top: 4.5rem;
 }
 
 .container {
-    margin: 1em 0;
+    margin-top: 2em;
 }
 
 .hero {
@@ -88,6 +88,10 @@ main {
 .hero-text {
     display: grid;
     align-content: center;
+}
+
+.hero-image {
+    max-width: 360px;
 }
 
 h1 {
@@ -139,7 +143,7 @@ p {
 }
 
 footer {
-    background-color: #777;
+    background-color: #2d4938;
     color: white;
     padding: 0.5em 0;
 }
@@ -159,4 +163,23 @@ footer>a {
 svg {
     max-width: 2rem;
     fill: white;
+}
+
+@media (max-width: 620px) {
+    .hero {
+        grid-template: repeat(2, max-content) / 1fr;
+        justify-items: center;
+        row-gap: 1em;
+    }
+
+    .header-content {
+        flex-direction: column;
+        align-items: center;
+        padding: 0.25rem 0 0;
+    }
+
+    .current-tab {
+        padding: 0.25rem 2rem 0.27rem;
+        border-radius: 5px 5px 0 0;
+    }
 }

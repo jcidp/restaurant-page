@@ -9,7 +9,7 @@ export default function loadHome() {
     hero_text.appendChild(createElement("h1", "Feast on Culinary Magic from Fantasy Worlds"));
     hero_text.appendChild(createElement("p", "We bring the fantastical flavors of your favorite fictional worlds to life."));
     hero_text.appendChild(createElement("p", "From the pages of beloved books to the silver screen, immerse yourself in a dining experience like no other!"));
-    hero_text.appendChild(createElement("button", "Book Now!", "cta"));
+    //hero_text.appendChild(createElement("button", "Book Now!", "cta"));
     const hero_container = createElement("div", "", "hero");
     hero_container.classList.add("container");
     hero_container.appendChild(hero_text);

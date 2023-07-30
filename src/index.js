@@ -1,6 +1,8 @@
 import "./style.css";
 import { loadHeader } from "./header";
 import loadHome from "./home";
+import loadContact from "./contact";
+import loadMenu from "./menu";
 
 const listenerController = (() => {
     let current_page = "home";
@@ -37,9 +39,11 @@ const listenerController = (() => {
                 break;
             case "contact":
                 contact.classList.add("current-tab");
+                loadContact();
                 break;
             case "menu":
                 menu.classList.add("current-tab");
+                loadMenu();
                 break;
         }
     }
